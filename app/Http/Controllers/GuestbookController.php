@@ -13,6 +13,7 @@ class GuestbookController extends Controller{
     public function index(){
  
         $guestbooks  = Guestbook::all();
+        //$guestbooks  = Guestbook::orderBy('id','desc')->get();
  
         return response()->json($guestbooks);
  
