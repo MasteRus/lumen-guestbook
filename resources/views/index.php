@@ -28,10 +28,12 @@
                     <button type="submit" id ="submit" class="btn btn-primary btn-lg">Submit</button>
                 </div>
             </form>
-            <div class="guestbook" v-repeat="guestbook: guestbooks">
+            <div class="guestbook">
+                
             </div>
         </div>
         <script type="text/javascript">
+            //Get all messages
             $(document).ready(function(){
                 $.ajax({
                     type: "GET",
@@ -45,6 +47,8 @@
                     }
                 });
             });
+            
+            //submit function
             $('#submit').click(function( event ) {
                 $.ajax({
                     type: "POST",
