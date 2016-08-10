@@ -1,1 +1,1 @@
-# lumen-guestbook
+# lumen-guestbook (First time look at lumen, total time spent: 3,25 hours)
